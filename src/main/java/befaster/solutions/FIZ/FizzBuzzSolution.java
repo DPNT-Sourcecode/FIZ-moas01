@@ -20,7 +20,7 @@ public class FizzBuzzSolution {
                     compare = cifra;
                 if(cifra != compare) {
                     deluxe = -1;
-                    break
+                    break;
                 }
 
             }
@@ -72,6 +72,7 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
 
