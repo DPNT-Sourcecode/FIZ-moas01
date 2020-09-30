@@ -11,9 +11,9 @@ public class FizzBuzzSolution {
 
         if(n % 3 == 0 && n % 5 == 0) {
             return "fizz buzz";
-        }else if(n % 3){
+        }else if(n % 3 == 0){
             return "fizz";
-        }else if(n % 5){
+        }else if(n % 5 == 0){
             return "buzz";
         }else{
             return Integer.toString(n);
@@ -22,4 +22,5 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
