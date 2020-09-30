@@ -24,6 +24,8 @@ public class FizzBuzzSolution {
                 }
 
             }
+            if(deluxe == 0)
+                deluxe=1;
 
         }
 
@@ -55,12 +57,20 @@ public class FizzBuzzSolution {
                 }
             }
         }
-        if( fizz == 1 && buzz == 1){
+        if( fizz == 1 && buzz == 1 && deluxe == 1){
+            return "fizz buzz deluxe";
+        }else if(fizz ==1 && deluxe ==1){
+            return "fizz deluxe";
+        }else if(buzz ==1 && deluxe ==1) {
+            return "buzz deluxe";
+        }else if( fizz == 1 && buzz == 1 ){
             return "fizz buzz";
         }else if(fizz == 1){
             return "fizz";
         }else if(buzz == 1){
             return "buzz";
+        }else if(deluxe == 1){
+            return "deluxe";
         }
         return Integer.toString(n);
 
@@ -72,6 +82,7 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
 
