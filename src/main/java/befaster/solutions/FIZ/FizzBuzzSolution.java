@@ -8,7 +8,9 @@ public class FizzBuzzSolution {
         int fizz=0;  //1 adev, 0 fals
         int buzz=0;
 
-        if( n % 3 == 0 ){
+        if( n % 3 == 0)
+            fizz = 1;
+        if( fizz == 0 ){
             int number = n;
             while( number > 0 ){
                 int cifra = number%10;
@@ -19,8 +21,9 @@ public class FizzBuzzSolution {
                 }
             }
         }
-
-        if( n % 5 == 0 ){
+        if(n % 5 == 0 )
+            buzz = 1;
+        if(buzz == 0 ){
             int number = n;
             while( number > 0 ){
                 int cifra = number%10;
@@ -37,8 +40,6 @@ public class FizzBuzzSolution {
             return "fizz";
         }else if(buzz == 1){
             return "buzz";
-        }else{
-            return Integer.toString(n);
         }
 
 
@@ -49,4 +50,5 @@ public class FizzBuzzSolution {
 
 
 }
+
 
