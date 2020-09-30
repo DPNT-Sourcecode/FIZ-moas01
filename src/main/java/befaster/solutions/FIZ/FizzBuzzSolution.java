@@ -7,6 +7,27 @@ public class FizzBuzzSolution {
     public String fizzBuzz(Integer n) {
         int fizz=0;  //1 adev, 0 fals
         int buzz=0;
+        int deluxe=0;
+
+        if( n > 10 ){
+            int cifra;
+            int compare = 0;
+            int number = n;
+            while(number > 0) {
+                cifra = number % 10; //44414
+                number = number / 10; //4441
+                if (compare == 0)
+                    compare = cifra;
+                if(cifra != compare) {
+                    deluxe = -1;
+                    break
+                }
+
+            }
+
+        }
+
+
 
         if( n % 3 == 0)
             fizz = 1;
@@ -51,6 +72,7 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
 
