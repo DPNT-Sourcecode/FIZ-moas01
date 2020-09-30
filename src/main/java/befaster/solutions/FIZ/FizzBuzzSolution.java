@@ -11,12 +11,12 @@ public class FizzBuzzSolution {
 
         if( n > 10 ){
             int cifra;
-            int compare = 0;
+            int compare = -1;
             int number = n;
             while(number > 0) {
-                cifra = number % 10; //44414
-                number = number / 10; //4441
-                if (compare == 0)
+                cifra = number % 10;
+                number = number / 10; 
+                if (compare == -1)
                     compare = cifra;
                 if(cifra != compare) {
                     deluxe = -1;
@@ -82,9 +82,3 @@ public class FizzBuzzSolution {
 
 
 }
-
-
-
-
-
-
