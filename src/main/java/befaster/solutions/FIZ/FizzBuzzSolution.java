@@ -4,11 +4,7 @@ import befaster.runner.SolutionNotImplementedException;
 
 public class FizzBuzzSolution {
 
-    public String fizzBuzz(Integer number) {
-        throw new SolutionNotImplementedException();
-    }
-    public String fizz_buzz(Integer n){
-
+    public String fizzBuzz(Integer n) {
         if(n % 3 == 0 && n % 5 == 0) {
             return "fizz buzz";
         }else if(n % 3 == 0){
@@ -18,9 +14,10 @@ public class FizzBuzzSolution {
         }else{
             return Integer.toString(n);
         }
-
     }
 
+
 }
+
 
 
