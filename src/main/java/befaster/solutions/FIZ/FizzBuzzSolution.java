@@ -41,6 +41,7 @@ public class FizzBuzzSolution {
         }else if(buzz == 1){
             return "buzz";
         }
+        return Integer.toString(n);
 
 
 
@@ -50,5 +51,6 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
