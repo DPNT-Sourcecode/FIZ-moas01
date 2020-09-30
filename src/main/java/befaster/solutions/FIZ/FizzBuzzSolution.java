@@ -28,6 +28,9 @@ public class FizzBuzzSolution {
                 deluxe=1;
         }
 
+
+
+
         if( n % 3 == 0)
             fizz = 1;
         if( fizz == 0 ){
@@ -88,5 +91,6 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
