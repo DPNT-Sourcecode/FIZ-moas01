@@ -14,7 +14,7 @@ public class FizzBuzzSolution {
             int compare = -1;
             int number = n;
             while(number > 0) {
-                cifra = number % 10; 
+                cifra = number % 10;
                 number = number / 10;
                 if (compare == -1)
                     compare = cifra;
@@ -55,10 +55,16 @@ public class FizzBuzzSolution {
             }
         }
         if( fizz == 1 && buzz == 1 && deluxe == 1){
+            if(n % 2 == 1 )
+                return "fizz buzz fake deluxe";
             return "fizz buzz deluxe";
         }else if(fizz ==1 && deluxe ==1){
+            if(n % 2 == 1 )
+                return "fizz fake deluxe";
             return "fizz deluxe";
         }else if(buzz ==1 && deluxe ==1) {
+            if(n % 2 == 1 )
+                return "buzz fake deluxe";
             return "buzz deluxe";
         }else if( fizz == 1 && buzz == 1 ){
             return "fizz buzz";
@@ -67,6 +73,8 @@ public class FizzBuzzSolution {
         }else if(buzz == 1){
             return "buzz";
         }else if(deluxe == 1){
+            if(n % 2 == 1 )
+                return "fake deluxe";
             return "deluxe";
         }
         return Integer.toString(n);
@@ -80,4 +88,5 @@ public class FizzBuzzSolution {
 
 
 }
+
 
