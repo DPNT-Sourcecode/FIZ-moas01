@@ -11,7 +11,7 @@ public class FizzBuzzSolution {
         if( n % 3 == 0 ){
             int number = n;
             while( number > 0 ){
-                int cifra = number/10;
+                int cifra = number%10;
                 number= number/10;
                 if(cifra==3) {
                     fizz = 1;
@@ -23,7 +23,7 @@ public class FizzBuzzSolution {
         if( n % 5 == 0 ){
             int number = n;
             while( number > 0 ){
-                int cifra = number/10;
+                int cifra = number%10;
                 number= number/10;
                 if(cifra==5) {
                     buzz = 1;
@@ -49,3 +49,4 @@ public class FizzBuzzSolution {
 
 
 }
+
