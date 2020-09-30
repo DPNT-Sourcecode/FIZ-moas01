@@ -9,27 +9,32 @@ public class FizzBuzzSolution {
         int buzz=0;
         int deluxe=0;
 
-        if( n > 10 ){
-            int cifra;
-            int compare = -1;
+
+        //deluxe 3
+        if( n % 3 == 0) {
             int number = n;
-            while(number > 0) {
-                cifra = number % 10;
+            while (number > 0) {
+                int cifra = number % 10;
                 number = number / 10;
-                if (compare == -1)
-                    compare = cifra;
-                if(cifra != compare) {
-                    deluxe = -1;
+                if (cifra == 3) {
+                    deluxe = 1;
                     break;
                 }
-
             }
-            if(deluxe == 0)
-                deluxe=1;
         }
-
-
-
+        if(deluxe != 1){
+            if( n % 5 == 0) {
+                int number = n;
+                while (number > 0) {
+                    int cifra = number % 10;
+                    number = number / 10;
+                    if (cifra == 5) {
+                        deluxe = 1;
+                        break;
+                    }
+                }
+            }
+        }
 
         if( n % 3 == 0)
             fizz = 1;
@@ -91,6 +96,7 @@ public class FizzBuzzSolution {
 
 
 }
+
 
 
 
