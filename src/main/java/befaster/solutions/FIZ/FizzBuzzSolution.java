@@ -14,8 +14,8 @@ public class FizzBuzzSolution {
             int compare = -1;
             int number = n;
             while(number > 0) {
-                cifra = number % 10;
-                number = number / 10; 
+                cifra = number % 10; 
+                number = number / 10;
                 if (compare == -1)
                     compare = cifra;
                 if(cifra != compare) {
@@ -26,10 +26,7 @@ public class FizzBuzzSolution {
             }
             if(deluxe == 0)
                 deluxe=1;
-
         }
-
-
 
         if( n % 3 == 0)
             fizz = 1;
@@ -78,7 +75,9 @@ public class FizzBuzzSolution {
 
 
 
+
     }
 
 
 }
+
